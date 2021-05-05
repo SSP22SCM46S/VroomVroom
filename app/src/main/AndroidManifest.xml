@@ -44,6 +44,9 @@
         <activity
             android:name="com.example.VroomVroom.PaymentActivity"
             android:label="Payment" />
+        <activity
+            android:name="com.example.VroomVroom.AvailableDriversActivity"
+            android:label="Available Drivers" />
         <activity android:name="com.example.VroomVroom.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

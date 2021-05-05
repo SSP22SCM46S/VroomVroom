@@ -51,7 +51,7 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
 
     private Button btnRequestCar;
     private Button btnPayment;
-
+    private Button btnDriver;
     private boolean isVroomVroomCancelled = true;
 
     private boolean isCarReady = false;
@@ -71,6 +71,15 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
 
         btnRequestCar = findViewById(R.id.btnRequestCar);
         btnRequestCar.setOnClickListener(this);
+
+        btnDriver = findViewById(R.id.btnDriver);
+        btnDriver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                transitionToAvailableDriversActivity();
+            }
+        });
+
 
         btnPayment = findViewById(R.id.btnPayment);
         btnPayment.setOnClickListener(new View.OnClickListener() {
@@ -444,6 +453,12 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
     }
     private void transitionToPaymentActivity(){
         Intent intent = new Intent(this,PaymentActivity.class);
+        startActivity(intent);
+
+    }
+
+    private void transitionToAvailableDriversActivity(){
+        Intent intent = new Intent(this,AvailableDriversActivity.class);
         startActivity(intent);
 
     }
