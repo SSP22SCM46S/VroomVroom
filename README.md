@@ -1,5 +1,5 @@
 # VroomVroom
-Problem statement
+Problem statement:
 Design and prototype an uber like application. Your application will allow customers and drivers to sign up for the application and use it whenever they want. It also allows user to setup a profile. A driver has a flexible working hour and can mark themselves available anytime. Customer looking for a ride can see available driver in their area, the wait time to get the ride and the ride cost. The customer can select whether or not to share the ride. The application should allow customer to select number of people riding with them and search which driver can provide a ride. A message is provided to the driver to accept the ride, once accepted the customer gets the driver information.
 The customer profile includes their credit card information, phone and mailing address. Once the ride is completed, the customer can enter the tip amount and credit card will be automatically charged. 
 Administrative reports, application shall include reports to help manage and improve the ride and the experience for the customer such as surveys, rating, QA…
