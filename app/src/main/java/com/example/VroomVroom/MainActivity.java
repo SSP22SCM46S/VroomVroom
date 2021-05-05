@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             public void done(ParseException e) {
                                 transitionToPassengerActivity();
                                 transitionToDriverRequestListActivity();
-
                             }
                         });
 

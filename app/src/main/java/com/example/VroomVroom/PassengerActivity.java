@@ -50,7 +50,7 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
     private LocationListener locationListener;
 
     private Button btnRequestCar;
-    private Button btnBeep;
+    private Button btnPayment;
 
     private boolean isVroomVroomCancelled = true;
 
@@ -72,8 +72,8 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
         btnRequestCar = findViewById(R.id.btnRequestCar);
         btnRequestCar.setOnClickListener(this);
 
-        btnBeep = findViewById(R.id.btnBeep);
-        btnBeep.setOnClickListener(new View.OnClickListener() {
+        btnPayment = findViewById(R.id.btnPayment);
+        btnPayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getDriverUpdates();
