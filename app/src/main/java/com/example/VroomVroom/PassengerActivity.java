@@ -76,7 +76,7 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
         btnPayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getDriverUpdates();
+                transitionToPaymentActivity();
 
             }
         });
@@ -440,6 +440,11 @@ public class PassengerActivity extends FragmentActivity implements OnMapReadyCal
 
         }, 0, 3000);
 
+
+    }
+    private void transitionToPaymentActivity(){
+        Intent intent = new Intent(this,PaymentActivity.class);
+        startActivity(intent);
 
     }
 
